@@ -1,7 +1,11 @@
 var url = 'https://restcountries.eu/rest/v1/name/';
 var countriesList = document.getElementById('countries');
 
-document.getElementById('search').addEventListener('click', searchCountries);
+document.getElementById('search').addEventListener('click', searchCountries2);
+
+function searchCountries2() {
+    document.getElementById('test').innerHTML = 'trud';
+}
 
 function searchCountries() {
     var url = 'https://restcountries.eu/rest/v2/name/eesti';
