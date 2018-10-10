@@ -8,7 +8,7 @@ function searchCountries2() {
 }
 
 function searchCountries() {
-    var url = 'https://restcountries.eu/rest/v2/name/eesti';
+    var url = 'https://restcountries.eu/rest/v2/name/{name}';
     var countryName = document.getElementById('country-name').value;
     if(!countryName.length) countryName = 'Poland';
     fetch(url + countryName)
