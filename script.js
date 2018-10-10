@@ -3,10 +3,6 @@ var countriesList = document.getElementById('countries');
 
 document.getElementById('search').addEventListener('click', searchCountries);
 
-function searchCountries2() {
-    document.getElementById('test').innerHTML = 'trud';
-}
-
 function searchCountries() {
     var url = 'https://restcountries.eu/rest/v2/name/{name}';
     var countryName = document.getElementById('country-name').value;
